@@ -10,7 +10,7 @@
 #include <stdbool.h>
 
 #define BLOCKED_IPS_FILE "blocked_ips.txt"
-#define LOG_FILE "arpcli.log"
+#define LOG_FILE "WinArpSpoof.log"
 #define MAX_IPS 256
 #define ARP_REQUEST 1
 #define ARP_REPLY 2
@@ -37332,15 +37332,15 @@ void _send_arp_request(u_char target_ip[4]);
 void _add_device_if_new(u_char *ip, u_char *mac);
 
 void print_usage() {
-    printf("ARP CLI Tool - Enhanced Windows Version\n");
+    printf("WinArpSpoof Tool - Enhanced Windows Version\n");
     printf("Usage:\n");
-    printf("  arpcli scan               - Scan network (no need to start first)\n");
-    printf("  arpcli block <IP>         - Block an IP (add to list)\n");
-    printf("  arpcli unblock <IP>       - Unblock an IP (remove from list)\n");
-    printf("  arpcli list               - List blocked IPs\n");
-    printf("  arpcli start              - Start ARP spoofing blocked IPs\n");
-    printf("  arpcli stop               - Stop ARP spoofing\n");
-    printf("  arpcli interfaces         - List available network interfaces\n");
+    printf("  WinArpSpoof scan               - Scan network (no need to start first)\n");
+    printf("  WinArpSpoof block <IP>         - Block an IP (add to list)\n");
+    printf("  WinArpSpoof unblock <IP>       - Unblock an IP (remove from list)\n");
+    printf("  WinArpSpoof list               - List blocked IPs\n");
+    printf("  WinArpSpoof start              - Start ARP spoofing blocked IPs\n");
+    printf("  WinArpSpoof stop               - Stop ARP spoofing\n");
+    printf("  WinArpSpoof interfaces         - List available network interfaces\n");
 }
 
 void load_blocked_ips() {
