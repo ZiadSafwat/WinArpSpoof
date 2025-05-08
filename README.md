@@ -10,6 +10,10 @@
 - Block
 - UnBlock
  
+When running with `start` command, the tool now automatically:
+- 🔒 Sets static ARP entry for your gateway
+- 🚫 Blocks dynamic ARP updates on your interface
+- 🛡️ Prevents ARP spoofing attacks against your machine
 ---
 
 ## 🏗️ Build Instructions
