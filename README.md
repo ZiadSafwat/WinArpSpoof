@@ -18,7 +18,9 @@ When running with `start` command, the tool now automatically:
 ## 🖥️ Usage
 
 - first download [Winpcap](https://www.winpcap.org/install/)
-- Copy WinArpSpoof.exe to a Windows machine and run it from the command line with Administrative privileges:
+- choose your system compatible version
+- [64-bit Windows version](./WinArpSpoof.exe) or [64-bit Windows](./WinArpSpoof_32bit.exe).
+- rename it to WinArpSpoof.exe to a Windows machine and run it from the command line with Administrative privileges:
 
 ARP CLI Tool - Windows Version
 Usage:
@@ -67,7 +69,7 @@ Although `WinArpSpoof.exe` is built for **Windows**, it is compiled on **Linux**
 
 ### 🧪 Build Command
 - you need [WinPcap Developer's Pack](https://www.winpcap.org/devel.htm)
-
+- for 64-bit Windows
 ```bash
 x86_64-w64-mingw32-gcc WinArpSpoof.c -o WinArpSpoof.exe \
 -I/your_path_to_winpcap_dev_pack/Include \
@@ -75,8 +77,20 @@ x86_64-w64-mingw32-gcc WinArpSpoof.c -o WinArpSpoof.exe \
 -L/your_path_to_winpcap_dev_pack/Lib/x64 \
 -lwpcap -liphlpapi -lws2_32
 ```
+- for 32-bit Windows
+```bash
+i686-w64-mingw32-gcc WinArpSpoof.c -o WinArpSpoof_32bit.exe \
+-I/your_path_to_winpcap_dev_pack/Include \
+-I/your_path_to_winpcap_dev_pack/Include/pcap \
+-L/your_path_to_winpcap_dev_pack/Lib \
+-lwpcap -liphlpapi -lws2_32
+```
 ---
+## ⚠️ Ethical and Legal Reminder
 
+ARP spoofing is a Man-in-the-Middle attack and is considered illegal or unauthorized on networks you don't own or manage. Always use this code only in educational labs or networks where you have explicit permission.
+
+---
 ## My Links 🔗
 
 - 🌐 [My Website](https://waves.pockethost.io/user-profile/3b5wmxh6tierl5h)  
