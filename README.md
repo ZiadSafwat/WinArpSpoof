@@ -1,6 +1,6 @@
-# 🧰 [ARP CLI Tool](https://ziadsafwat.github.io/Windows-ARP-CLI-Tool/website/)
+# 🧰 [WinArpSpoof](https://ziadsafwat.github.io/Windows-ARP-CLI-Tool/website/)
 
-`arpcli.exe` is a command-line utility designed for Windows that allows network administrators (scan - block - unblock) and built to be used in [SafwatX](https://github.com/ZiadSafwat/SafwatX) which is an opensource app , the tool runs on Windows and leverages the powerful [WinPcap](https://www.winpcap.org/) library.
+`WinArpSpoof.exe` is a command-line utility designed for Windows that allows network administrators (scan - block - unblock) and built to be used in [SafwatX](https://github.com/ZiadSafwat/SafwatX) which is an opensource app , the tool runs on Windows and leverages the powerful [WinPcap](https://www.winpcap.org/) library.
 
 ---
 
@@ -18,7 +18,7 @@ When running with `start` command, the tool now automatically:
 
 ## 🏗️ Build Instructions
 
-Although `arpcli.exe` is built for **Windows**, it is compiled on **Linux** using the MinGW cross-compiler.
+Although `WinArpSpoof.exe` is built for **Windows**, it is compiled on **Linux** using the MinGW cross-compiler.
 
 ### 🔧 Requirements for building (Linux) 
 
@@ -37,7 +37,7 @@ Although `arpcli.exe` is built for **Windows**, it is compiled on **Linux** usin
 - you need [WinPcap Developer's Pack](https://www.winpcap.org/devel.htm)
 
 ```bash
-x86_64-w64-mingw32-gcc arpcli.c -o arpcli.exe \
+x86_64-w64-mingw32-gcc WinArpSpoof.c -o WinArpSpoof.exe \
 -I/your_path_to_winpcap_dev_pack/Include \
 -I/your_path_to_winpcap_dev_pack/Include/pcap \
 -L/your_path_to_winpcap_dev_pack/Lib/x64 \
@@ -45,17 +45,17 @@ x86_64-w64-mingw32-gcc arpcli.c -o arpcli.exe \
 ```
 🖥️ Usage
 
-Copy arpcli.exe to a Windows machine and run it from the command line:
+Copy WinArpSpoof.exe to a Windows machine and run it from the command line:
 ```
 ARP CLI Tool - Windows Version
 Usage:
-  arpcli scan               - Scan network (no need to start first)
-  arpcli block <IP>         - Block an IP (add to list)
-  arpcli unblock <IP>       - Unblock an IP (remove from list)
-  arpcli list               - List blocked IPs
-  arpcli start              - Start ARP spoofing blocked IPs
-  arpcli stop               - Stop ARP spoofing
-  arpcli interfaces         - List available network interfaces
+  WinArpSpoof scan               - Scan network (no need to start first)
+  WinArpSpoof block <IP>         - Block an IP (add to list)
+  WinArpSpoof unblock <IP>       - Unblock an IP (remove from list)
+  WinArpSpoof list               - List blocked IPs
+  WinArpSpoof start              - Start ARP spoofing blocked IPs
+  WinArpSpoof stop               - Stop ARP spoofing
+  WinArpSpoof interfaces         - List available network interfaces
   ```
     ℹ️ Note: Administrative privileges may be required for network interface access.
 ---
