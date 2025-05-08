@@ -18,8 +18,8 @@ When running with `start` command, the tool now automatically:
 ## 🖥️ Usage (Choose your system-compatible version)
 
 - first download [Winpcap](https://www.winpcap.org/install/)
-- [Download 64-bit version](./WinArpSpoof.exe)  
-- [Download 32-bit version](./WinArpSpoof_32bit.exe)
+- [Download 64-bit version]([./WinArpSpoof.exe](https://github.com/ZiadSafwat/WinArpSpoof/raw/refs/heads/main/WinArpSpoof.exe)  
+- [Download 32-bit version](https://github.com/ZiadSafwat/WinArpSpoof/raw/refs/heads/main/WinArpSpoof_32bit.exe)
 
 > ⚠️ **Important:**  
 > After downloading, **rename the file to `WinArpSpoof.exe`**, place it on your **Windows machine**, and run it from the **Command Prompt with Administrative privileges**.
