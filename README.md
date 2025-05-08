@@ -84,4 +84,4 @@ This project uses WinPcap, developed by:
 
 🪪 License
 
-This project is licensed under the MIT License. However, it uses the WinPcap library, which is licensed under the BSD 3-Clause License. Both licenses are included in this repository.
+This project is licensed under the MIT License. However, it uses the WinPcap library, which is licensed under the BSD 3-Clause License.
