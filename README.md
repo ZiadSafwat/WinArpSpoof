@@ -15,12 +15,15 @@ When running with `start` command, the tool now automatically:
 - 🚫 Blocks dynamic ARP updates on your interface
 - 🛡️ Prevents ARP spoofing attacks against your machine
 ---
-## 🖥️ Usage
+## 🖥️ Usage (Choose your system-compatible version)
 
 - first download [Winpcap](https://www.winpcap.org/install/)
-- choose your system compatible version
-- [64-bit Windows version](./WinArpSpoof.exe) or [64-bit Windows](./WinArpSpoof_32bit.exe).
-- rename it to WinArpSpoof.exe to a Windows machine and run it from the command line with Administrative privileges:
+- [Download 64-bit version](./WinArpSpoof.exe)  
+- [Download 32-bit version](./WinArpSpoof_32bit.exe)
+
+> ⚠️ **Important:**  
+> After downloading, **rename the file to `WinArpSpoof.exe`**, place it on your **Windows machine**, and run it from the **Command Prompt with Administrative privileges**.
+
 
 ARP CLI Tool - Windows Version
 Usage:
