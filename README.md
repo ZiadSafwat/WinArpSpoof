@@ -1,4 +1,4 @@
-# 🧰 [WinArpSpoof](https://ziadsafwat.github.io/Windows-ARP-CLI-Tool/website/)
+# 🧰 [WinArpSpoof](https://ziadsafwat.github.io/WinArpSpoof/website/)
 
 `WinArpSpoof.exe` is a command-line utility designed for Windows that allows network administrators (scan - block - unblock) and built to be used in [SafwatX](https://github.com/ZiadSafwat/SafwatX) which is an opensource app , the tool runs on Windows and leverages the powerful [WinPcap](https://www.winpcap.org/) library.
 
@@ -15,7 +15,47 @@ When running with `start` command, the tool now automatically:
 - 🚫 Blocks dynamic ARP updates on your interface
 - 🛡️ Prevents ARP spoofing attacks against your machine
 ---
+## 🖥️ Usage
 
+- first download [Winpcap](https://www.winpcap.org/install/)
+- Copy WinArpSpoof.exe to a Windows machine and run it from the command line with Administrative privileges:
+
+ARP CLI Tool - Windows Version
+Usage:
+- Scan network (no need to start first)
+```
+WinArpSpoof scan 
+```
+- Block an IP (add to list)
+```
+WinArpSpoof block <IP>
+```
+- Unblock an IP (remove from list)
+```  
+WinArpSpoof unblock <IP>
+```
+- List blocked IPs
+```
+WinArpSpoof list
+```
+- Start ARP spoofing blocked IPs
+```
+WinArpSpoof start
+```
+- Stop ARP spoofing
+```
+WinArpSpoof stop
+```
+- List available network interfaces
+```
+WinArpSpoof interfaces
+```
+
+```
+    ℹ️ Note: Administrative privileges may be required for network interface access.
+```
+
+---
 ## 🏗️ Build Instructions
 
 Although `WinArpSpoof.exe` is built for **Windows**, it is compiled on **Linux** using the MinGW cross-compiler.
@@ -23,15 +63,7 @@ Although `WinArpSpoof.exe` is built for **Windows**, it is compiled on **Linux**
 ### 🔧 Requirements for building (Linux) 
 
 - `x86_64-w64-mingw32-gcc`
-- WinPcap Developer Pack (`WpdPack`)
-
-### 🔧 Runtime Requirements:
-
-- Windows OS
-
-- [WinPcap driver installed](https://www.winpcap.org/install/) 
-
-- Administrator privileges
+- WinPcap Developer Pack [(`WpdPack`)](https://www.winpcap.org/devel.htm)
 
 ### 🧪 Build Command
 - you need [WinPcap Developer's Pack](https://www.winpcap.org/devel.htm)
@@ -43,21 +75,6 @@ x86_64-w64-mingw32-gcc WinArpSpoof.c -o WinArpSpoof.exe \
 -L/your_path_to_winpcap_dev_pack/Lib/x64 \
 -lwpcap -liphlpapi -lws2_32
 ```
-🖥️ Usage
-
-Copy WinArpSpoof.exe to a Windows machine and run it from the command line:
-```
-ARP CLI Tool - Windows Version
-Usage:
-  WinArpSpoof scan               - Scan network (no need to start first)
-  WinArpSpoof block <IP>         - Block an IP (add to list)
-  WinArpSpoof unblock <IP>       - Unblock an IP (remove from list)
-  WinArpSpoof list               - List blocked IPs
-  WinArpSpoof start              - Start ARP spoofing blocked IPs
-  WinArpSpoof stop               - Stop ARP spoofing
-  WinArpSpoof interfaces         - List available network interfaces
-  ```
-    ℹ️ Note: Administrative privileges may be required for network interface access.
 ---
 
 ## My Links 🔗
