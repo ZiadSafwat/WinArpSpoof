@@ -4,75 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WinArpSpoof Tool</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="hero">
         <div class="hero-bg"></div>
+        <div class="particles"></div>
         <div class="hero-content">
-            <h1 class="animated-text">WinArpSpoof Tool</h1>
-            <p class="animated-text">A powerful command-line utility for network administrators.</p>
-            <a href="https://github.com/ZiadSafwat/WinArpSpoof/raw/refs/heads/main/arpcli.exe" class="button animated-text">Download Now</a>
+            <h1 class="animate__animated animate__fadeInUp">WinArpSpoof Tool</h1>
+            <p class="animate__animated animate__fadeInUp">Advanced network security utility with ARP spoofing detection and prevention</p>
+            <div class="button-container">
+                <a href="https://www.winpcap.org/install/bin/WinPcap_4_1_3.exe" class="button animate__animated animate__fadeInUp">
+                    <i class="fas fa-download"></i> Download Requirement
+                </a>
+                <a href="https://github.com/ZiadSafwat/WinArpSpoof/raw/refs/heads/main/WinArpSpoof.exe" class="button button-primary animate__animated animate__fadeInUp">
+                    <i class="fas fa-file-archive"></i> Download 64-bit
+                </a>
+                <a href="https://github.com/ZiadSafwat/WinArpSpoof/raw/refs/heads/main/WinArpSpoof_32bit.exe" class="button button-secondary animate__animated animate__fadeInUp">
+                    <i class="fas fa-file-archive"></i> Download 32-bit
+                </a>
+            </div>
         </div>
     </header>
 
     <main class="container">
-        <section id="features" class="card frosted-glass">
-            <h2>Key Features</h2>
+        <section id="features" class="card">
+            <h2><i class="fas fa-star"></i> Key Features</h2>
             <ul class="feature-list">
                 <li>
-                    <i class="fas fa-search"></i>
-                    <span>Scan Network</span>
-                    <p>Quickly discover devices on your network.</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Network Scanning</h3>
+                    <p>Comprehensive network discovery with detailed device enumeration and analysis.</p>
                 </li>
                 <li>
-                    <i class="fas fa-ban"></i>
-                    <span>Block IP</span>
-                    <p>Prevent specific devices from communicating.</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>IP Blocking</h3>
+                    <p>Selective network access control with precise IP targeting and management.</p>
                 </li>
                 <li>
-                    <i class="fas fa-check-circle"></i>
-                    <span>Unblock IP</span>
-                    <p>Restore communication to blocked devices.</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>IP Unblocking</h3>
+                    <p>Instant restoration of network access with simple command execution.</p>
                 </li>
                 <li>
-                    <i class="fas fa-shield-alt"></i>
-                    <span>ARP Spoofing Protection</span>
-                    <p>Protect against ARP spoofing attacks.</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>ARP Protection</h3>
+                    <p>Real-time detection and prevention of ARP spoofing and cache poisoning.</p>
                 </li>
             </ul>
         </section>
 
-        <section id="usage" class="card frosted-glass">
-            <h2>Usage Examples</h2>
+        <section id="usage" class="card">
+            <h2><i class="fas fa-terminal"></i> Usage Examples</h2>
             <pre><code class="language-bash">
-arpcli scan
-arpcli block 192.168.1.100
-arpcli unblock 192.168.1.100
-arpcli start
-arpcli stop
-arpcli interfaces
+# Scan network with detailed output
+WinArpSpoof scan 
+
+# Block target IP 
+WinArpSpoof block 192.168.1.100
+
+# Unblock specific IP address
+WinArpSpoof unblock 192.168.1.100
+
+# Start protection with logging file auto generated
+WinArpSpoof start
+
+# View network interfaces
+WinArpSpoof interfaces
             </code></pre>
         </section>
 
-        <section id="github" class="card frosted-glass">
-            <h2>GitHub Repository</h2>
-            <p>Explore the source code and contribute on <a href="https://github.com/ZiadSafwat/WinArpSpoof">GitHub</a>.</p>
+        <section id="github" class="card">
+            <h2><i class="fab fa-github"></i> GitHub Repository</h2>
+            <p>Contribute to the project or report issues on our <a href="https://github.com/ZiadSafwat/WinArpSpoof">GitHub repository <i class="fas fa-external-link-alt"></i></a>.</p>
+            <div class="github-stats">
+                <span><i class="fas fa-code-branch"></i> MIT License</span>
+                <span><i class="fas fa-star"></i> Open Source</span>
+                <span><i class="fas fa-users"></i> Community Driven</span>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 ZiadSafwat | MIT License | <a href="mailto:Ziadsafwataraby@gmail.com">Contact</a></p>
+        <div class="footer-content">
+            <p>&copy; 2025 ZiadSafwat | <a href="mailto:Ziadsafwataraby@gmail.com">Contact Developer</a></p>
+            <div class="social-links">
+                <a href="https://github.com/ZiadSafwat/"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ziad-elaraby-556b0621b"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="script.js"></script>
 </body>
 </html>
